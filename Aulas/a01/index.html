@@ -6,15 +6,14 @@
         document.write('<br>');
     }
     function mostra(frase) {
-        document.write ('Olá ' + frase)
+        document.write (frase);
         pulaLinha();
     }
-    var ano = 2016
-
-    mostra('Flavio tem' + (ano - 1977) + ' anos');
-
-    mostra('Joaquim tem' + (ano - 1996) + ' anos');
-
-    document.write(ano);
+    function calculaImc(altura, peso){
+        var imc = peso/(altura * altura)
+        mostra('seu imc é '+ imc)
+    }
+    calculaImc(1.75, 75)
     
+
 </script>
