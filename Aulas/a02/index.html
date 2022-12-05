@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write('<br>');
+        document.write('<br>');
+    }
+    function mostra(frase) {
+        document.write (frase);
+        pulaLinha();
+    }
+    function contador() {
+        for(x = 1; x <= 5;x++) {
+            document.write(x)
+            pulaLinha()
+        }
+    }
+    function compararPontosAnoPassado() {
+            if(pontosAnoPassado == pontos) {
+            mostra('Seu time esta IGUAL que o ano passado');
+        } if (pontosAnoPassado > pontos) {
+            mostra('Seu time esta PIOR que o ano passado');
+        } if(pontosAnoPassado < pontos) {
+            mostra('Seu time esta MELHOR que o ano passado');
+        }
+        mostra('Fim!')
+    }
+
+    var vitorias = parseInt(prompt('Entre com o numero de vitorias.'));
+    var empates = parseInt(prompt('Entre com o numero de empates'));
+    var pontos = vitorias * 3 + empates;
+    var pontosAnoPassado = 28;
+
+    mostra('Os pontos do seu tipo é ' + pontos);
+    compararPontosAnoPassado()
+    //contador()
+
+</script>
