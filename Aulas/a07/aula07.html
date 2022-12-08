@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 6</title>
+    <title>Aula 7</title>
     <style>
         canvas {
             background-color: cadetblue;
@@ -18,24 +18,26 @@
 <script>
     var tela = document.querySelector('canvas');
     var pincel = tela.getContext('2d');
-
-    pincel.fillStyle = 'grey';
+    pincel.fillStyle = 'lightgrey';
     pincel.fillRect(0 , 0, 600, 400);
 
-    function exibeBolinha(evento){
+    function desenhaCirculo(x , y , raio){
 
-        var x = evento.pageX - tela.offsetLeft;
-        var y = evento.pageY - tela.offsetTop;
-
-        pincel.fillStyle = ' blue';
+        pincel.fillStyle = 'blue';
         pincel.beginPath();
-        pincel.arc(x, y , 10, 0, 2*3.14);
-        pincel.fill();
-        console.log(x + ' , ' + y);
+        pincel.arc(x, y , raio, 0, 2* Math.PI)
+        pincel.fill()
     }
-
-    tela.onclick = exibeBolinha
-
+    function limpaTela(){
+        pincel.clearRect(0, 0, 600, 400)
+    }
+    var x = 20;
+    function atualizaTela(){
+        limpaTela()
+        desenhaCirculo(x,20,10)
+        x++
+    }
+        setInterval(atualizaTela, 10)
 
 </script>
 </html>
