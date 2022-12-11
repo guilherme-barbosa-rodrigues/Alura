@@ -34,44 +34,26 @@ nav a:hover {
     color: #C78C19;
     text-decoration: underline;
 }
-.produtos {
+main {
     width: 940px;
     margin: 0 auto;
-    padding: 50px 0;
 }
-
-.produtos li {
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px ;
-    box-sizing: border-box;
-    border: 2px solid black;
-    border-radius: 10px;
+form {
+    margin: 40px 0;
 }
-.produtos li:hover {
-    border-color: #C78C19;
+form label, form p {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px 0;
 }
-.produtos li:active{
-    border-color: #088C19;
+.padrao {
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 10px 25px;
+    width: 50%;
 }
-.produtos h2 {
-    font-size: 30px;
-    font-weight: bold;
-}
-.produtos li:hover h2 {
-    font-size: 35px;
-    transition: 0.25s;
-}
-.produto-descricao {
-    font-size: 18px;
-}
-.produto-preco {
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 10px;
+.checkbox {
+    margin: 20px 0;
 }
 footer{
     text-align: center;

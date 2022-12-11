@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <img src="imagens/logo.png" alt="logo-barbearia-alura">
+            </h1>
+            <nav>
+                <ul >
+                    <li><a href="#"target="_blank">Home</a></li>
+                    <li><a href="#"target="_blank">Produtos</a></li>
+                    <li><a href="#" target="_blank">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+      <form action="">
+        <label for="inome">Nome: </label>
+        <input id="inome" type="text" class="padrao">
+
+        <label for="iemail">Email: </label>
+        <input id="iemail" type="email" class="padrao">
+
+        <label for="itelefone">Telefone: </label>
+        <input id="itelefone" type="text" class="padrao">
+
+        <label for="imensagem">Mensagem: </label>
+        <textarea class="padrao" id="imensagem" cols="69" rows="10"></textarea>
+
+        <div>
+            <p>Como prefere o nosso contato?</p>
+            <label for="radioemail"><input name="contato" id="radioemail" type="radio" value="email"> Email</label>
+            
+            <label for="radiotelefone"><input name="contato" id="radiotelefone" type="radio" value="telefone"> Telefone</label>
+            
+            <label for="radiowhatsapp"><input name="contato" id="radiowhatsapp" type="radio" value="whatsApp"> WhatsApp</label>
+        </div>
+
+        <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+
+        <input type="submit" value ="Enviar">
+
+        
+
+
+      </form>
+    </main>
+    <footer>
+        <img src="imagens/logo-branco.png" alt="">
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+    </footer>
+</body>
+</html>
