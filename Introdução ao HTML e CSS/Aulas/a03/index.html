@@ -25,32 +25,38 @@
     <main>
       <form action="">
         <label for="inome">Nome: </label>
-        <input id="inome" type="text" class="padrao">
+        <input id="inome" type="text" class="padrao" required placeholder="Nome e sobrenome">
 
         <label for="iemail">Email: </label>
-        <input id="iemail" type="email" class="padrao">
+        <input id="iemail" type="email" class="padrao" required placeholder="seuemail@dominio.com">
 
         <label for="itelefone">Telefone: </label>
-        <input id="itelefone" type="text" class="padrao">
+        <input id="itelefone" type="tel" class="padrao" required placeholder="(XX) XXXXX-XXX">
 
         <label for="imensagem">Mensagem: </label>
-        <textarea class="padrao" id="imensagem" cols="69" rows="10"></textarea>
+        <textarea required class="padrao" id="imensagem" cols="69" rows="10"></textarea>
 
         <div>
             <p>Como prefere o nosso contato?</p>
-            <label for="radioemail"><input name="contato" id="radioemail" type="radio" value="email"> Email</label>
+            <label for="radioemail"><input name="contato" id="radioemail" type="radio" value="email" checked> Email</label>
             
             <label for="radiotelefone"><input name="contato" id="radiotelefone" type="radio" value="telefone"> Telefone</label>
             
             <label for="radiowhatsapp"><input name="contato" id="radiowhatsapp" type="radio" value="whatsApp"> WhatsApp</label>
         </div>
-
-        <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
-
-        <input type="submit" value ="Enviar">
-
         
+        <div>
+            <p>Qual horario prefere ser atendido?</p>
+            <select name="" id="">
+                <option value="">Manha</option>
+                <option value="">Tarde</option>
+                <option value="">Noite</option>
+            </select>
+        </div>
 
+        <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por email?</label>
+
+        <input class="enviar" type="submit" value ="Enviar">
 
       </form>
     </main>
