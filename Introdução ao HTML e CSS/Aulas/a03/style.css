@@ -64,11 +64,26 @@ form label, form p {
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    transition: 0.3s background;
+    transition: 0.3s all;
     cursor: pointer;
 }
 .enviar:hover {
     background-color: darkorange;
+    transform: scale(1.1);
+
+}
+table {
+    margin: 20px 0 40px;
+    border-collapse: collapse;
+
+}
+thead {
+    background-color: #555555;
+    color: white;
+}
+td, th {
+    border: 1px solid black;
+    padding: 8px 15px;
 }
 footer{
     text-align: center;
