@@ -1,0 +1,141 @@
+@charset "UTF-8";     
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+    border-radius: 0 0 7px 7px;
+}
+.container {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+#missao {
+    font-size: 20px;
+}
+.banner {
+   width: 100%;
+   height: 320px
+}
+ main {
+    background: linear-gradient(#FEFEFE 50%, #888888)
+ }
+ .principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+ }
+ .titulo-principal{
+     padding-left: 15px;
+     text-align: center;
+     font-size: 2em;
+     margin: 0 0 1em;
+     clear: left;
+ }
+ .principal, .beneficios, .mapa{
+    width: 940px;
+    margin: 0 auto;
+ }
+ .utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+ }
+ .principal p {
+     margin: 0 0 1em;
+ }
+ .principal strong {
+     font-weight: bold;
+ }
+ .principal em {
+     font-style: italic;
+ 
+ }
+ .mapa {
+    padding: 3em 0;
+ }
+ .mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+ }
+ .beneficios {
+    padding: 3em 0;
+ }
+ .conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+    
+ }
+ .lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+ }
+ .itens {
+    line-height: 1.5em;
+ }
+ .itens:before {
+    font-weight: bold;  
+    content: '✭ ';
+ }
+ .itens:nth-child(2n) {
+    font-weight: bold;
+ }
+.img-beneficios {
+    width: 60%;
+    opacity: 1;
+    border-radius: 7px;
+    transition: 400ms;
+ }
+ .img-beneficios:hover {
+    opacity: 0.3;
+ }
+ .video {
+    width: 940px;
+    margin: 40px auto;
+ }
+ #video {
+    margin: 10px 190px;
+ }
+ #mapa {
+    border-radius: 10px;
+ }
+footer{
+    text-align: center;
+    background: url(imagens/bg.jpg);
+    padding: 40px 0;
+}
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px
+}
