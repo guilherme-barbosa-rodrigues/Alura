@@ -139,3 +139,13 @@ footer{
     font-size: 13px;
     margin-top: 20px
 }
+@media screen and (max-width: 480px) {
+   .principal, .beneficios, .container, .conteudo-beneficios, .mapa, .video {
+      width: 750px;
+   }
+   #video {
+      width: 100%;
+      margin-left: 0;
+   }
+   
+}
