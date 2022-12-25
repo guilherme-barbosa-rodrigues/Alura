@@ -98,6 +98,10 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
 }
+.titulo-secao {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
 .cartao {
     width: 100%;
     border-radius: 15px;
