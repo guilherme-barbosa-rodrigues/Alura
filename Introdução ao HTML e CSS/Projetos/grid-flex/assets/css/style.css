@@ -164,3 +164,7 @@ body {
 .cartao__destaque {
     grid-column: span 2;
 }
+.secao {
+    display: grid;
+    gap: 16px;
+}
